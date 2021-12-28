@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-">
+        <title>All Product - Bella</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="Menuitems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart.png" alt="cart" width="39px" height="30px"></a>
+                <img src="menu.png" alt="menu" class="menu-icon" onclick="menutoggle()">
+            </div>
+            
+        </div>
+ 
+<!--------------Cart stuff----------->
+<div class="sub-category cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="buy-1.jpg" alt="">
+                    <div>
+                        <p>Red Printed T-Shirt</p>
+                        <small>Price: 500 CFA</small>
+                        <br>
+                        <a href="">Remove</a>
+                        
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>500 CFA</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="buy-2.jpg" alt="">
+                    <div>
+                        <p>Red Printed T-Shirt</p>
+                        <small>Price: 600 CFA</small>
+                        <br>
+                        <a href="">Remove</a>
+                        
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>500 CFA</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="buy-3.jpg" alt="">
+                    <div>
+                        <p>Red Printed T-Shirt</p>
+                        <small>Price: 500 CFA</small>
+                        <br>
+                        <a href="">Remove</a>
+                        
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>5000 CFA</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>5700 CFA</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>200 CFA</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>5900 CFA</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</div>
+
+
+<!--------------Footer----------->
+
+         <footer class="footer">
+             <div class="container">
+                 <div class="row">
+                     <div class="footer-col-1">
+                         <h3>Dowload Our App</h3>
+                         <p>Download App for Android and ios mobile phone</p>
+                         <div class="app-logo">
+                             <img src="play-store.png" alt="">
+                             <img src="app-store.png" alt="">
+                         </div>
+                     </div>
+                     <div class="footer-col-2">
+                        <img src="logo-white.png" alt="">
+                        <p>Purposek jrbiukolb oufbj osug is  olsfk il igsruf</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Wechat</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>Facebook</li>
+                        </ul>
+                    </div>
+                 </div>
+                 <hr>
+                 <p class="Copyright">Copyright 2020 - RedStore</p>
+             </div>
+         </footer>
+
+
+
+         <script>
+             var Menuitems = document.getElementById("Menuitems");
+             Menuitems.style.maxHeight= "0px";
+             function menutoggle(){
+                 if(Menuitems.style.maxHeight == "0px")
+                 {
+                    Menuitems.style.maxHeight= "200px"
+                 }
+                 else
+                 {
+                    Menuitems.style.maxHeight = "0px";
+                 }
+             }
+         </script>
+
+
+    </body>
+</html>
